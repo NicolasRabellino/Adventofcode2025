@@ -71,6 +71,7 @@ public class Elfos4 {
                 if (rowToCheck >= 0 && rowToCheck < grid.length && colToCheck >= 0 && colToCheck < grid[0].length && grid[rowToCheck][colToCheck] == '@') {
                     totalAround++;
                 }
+                if(totalAround == 4) break;
             }
         }
         return totalAround;
